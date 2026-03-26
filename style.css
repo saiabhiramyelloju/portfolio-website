@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+body{
+    font-family: "Fira code", monospace;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    font-size: larger;
+    background: fixed;
+    background-color: transparent;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    padding: 0;
+}
+
+#nav-links a{
+    text-decoration: none;
+    color: black;
+    transition: transform 0.5s ease-in-out;
+}
+
+#nav-links a:hover{
+    background-color: rgb(50, 12, 121);
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    transform: rotate(360deg);
+    transition: 0.5s ease-out;
+}
+
+#home{
+    background-image: url(images/image.png);
+    height: 100vh;
+    width: auto;
+    color: #fff;
+}
