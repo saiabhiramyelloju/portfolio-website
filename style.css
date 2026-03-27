@@ -10,8 +10,12 @@ body{
     align-items: center;
     padding: 15px 40px;
     font-size: larger;
-    background: fixed;
     background-color: transparent;
+    border-bottom: 1px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    margin: none;
+    height: 50px;
 }
 
 nav ul{
@@ -19,26 +23,41 @@ nav ul{
     list-style: none;
     gap: 50px;
     padding: 0;
+    margin: none;
 }
 
 #nav-links a{
     text-decoration: none;
     color: black;
-    transition: transform 0.5s ease-in-out;
+}
+
+.sub-boxlinks{
+    border-radius: 20px;
 }
 
 #nav-links a:hover{
-    background-color: rgb(50, 12, 121);
+    text-decoration: none;
+    color: black;
+    padding: 25px 15px 25px;
+    margin: none;
+    border: 1px solid black;
+    margin-left: 1px solid black;
+    margin-right: 1px solid black;
+    background-color: black;
     color: white;
-    border-radius: 10px;
-    padding: 5px;
-    transform: rotate(360deg);
-    transition: 0.5s ease-out;
 }
 
 #home{
     background-image: url(images/image.png);
     height: 100vh;
     width: auto;
-    color: #fff;
+    margin: none;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
