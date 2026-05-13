@@ -3,71 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Abhiram</title>
+    <title>Portfolio | Sai Abhiram</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <div class="navbar">
-            <div class="logo">
-                Abhiram
-            </div>
-            <div id="nav-links">
-                <div class="sub-boxlinks">
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <main>
-        <section id="home">
-            <div class="home-title">
+    <header class="site-header">
+        <nav class="navbar">
+            <h1 class="logo">Sai Abhiram</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="home" class="hero card">
+            <div class="hero-content">
+                <p class="eyebrow">Cybersecurity Student • Developer</p>
                 <h2>Hi, I'm Sai Abhiram</h2>
-            </div>
-            <div class="home-matter">
-                <caption>Student at Vignana Bharathi Institue of Technology and also fellow at NxtWave CCBP4.0 Technologies</caption>
-                <p>You can go through my Github profile here</p>
-                <a href="https://github.com/saiabhiramyelloju"><button>My GitHub</button></a>
-            </div>
-        </section>
-        <section id="about">
-            <div class="about-title">
-                <h1>About Me</h1>
-            </div>
-        <div class="about-matter">
-            <p>
-            I’m Abhiram, a Computer Science and Engineering (Cybersecurity) student with a strong focus on building practical, real-world tech skills.
-            I’m deeply interested in programming, cybersecurity, and system-level thinking. Rather than just learning theory, I focus on understanding how things actually work — from writing efficient code in C and Python to exploring operating systems, networking, and security concepts.
-            I’ve worked on projects ranging from web development using HTML and CSS to building small tools and experimenting with Linux environments for cybersecurity practice. I’m also actively developing my problem-solving skills and working toward creating more advanced, impactful projects.
-            My long-term goal is to build intelligent systems and tools that solve real problems — inspired by the idea of creating something as powerful and adaptive as JARVIS.
-            Right now, I’m focused on mastering the fundamentals, building consistent projects, and pushing myself to think like an engineer, not   just a coder.
-        </p>
-        </div>
-        </section>
-        <section id="contact">
-            <div class="contact">
-                <h1>Contact Me</h1>
-            </div>
-            <div class="contact-matter">
+                <p class="lead">
+                    Student at Vignana Bharathi Institute of Technology and Fellow at NxtWave CCBP 4.0 Technologies.
+                </p>
                 <p>
-                I’m always open to discussing new opportunities, collaborations, or interesting tech ideas.
-                Whether you have a project in mind, want to connect, or just want to talk about technology and cybersecurity, feel free to reach out. <br>
-                * 📧 Email: [jarvisabhi91@gmail.com](mailto:jarvisabhi91@gmail.com) <br>
-                * 💼 LinkedIn: https://linkedin.com/in/sai-abhiram-yelloju <br>
-                <a href="https://wa.me/919700181520" target="_blank"><button>Chat with me on WhatsApp 📱</button></a><br>
-                I usually respond within 24–48 hours.
-            </p>
+                    I enjoy building practical projects, learning deeply, and turning ideas into clean, meaningful solutions.
+                </p>
+                <a class="button" href="https://github.com/saiabhiramyelloju" target="_blank" rel="noopener noreferrer">View GitHub</a>
             </div>
+        </section>
+
+        <section id="about" class="card">
+            <h2>About Me</h2>
+            <p>
+                I’m Abhiram, a Computer Science and Engineering (Cybersecurity) student with a strong focus on building practical,
+                real-world tech skills. I’m deeply interested in programming, cybersecurity, and system-level thinking.
+            </p>
+            <p>
+                Rather than only learning theory, I focus on understanding how things actually work — from writing efficient code
+                in C and Python to exploring operating systems, networking, and security concepts.
+            </p>
+            <p>
+                I’ve worked on projects in web development and I regularly experiment with Linux environments for cybersecurity
+                practice. My long-term goal is to build intelligent systems and tools that solve real problems.
+            </p>
+        </section>
+
+        <section id="contact" class="card">
+            <h2>Contact</h2>
+            <p>
+                I’m always open to opportunities, collaboration, and interesting technical conversations.
+            </p>
+            <ul class="contact-list">
+                <li><strong>Email:</strong> <a href="mailto:jarvisabhi91@gmail.com">jarvisabhi91@gmail.com</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/sai-abhiram-yelloju" target="_blank" rel="noopener noreferrer">linkedin.com/in/sai-abhiram-yelloju</a></li>
+            </ul>
+            <a class="button button-secondary" href="https://wa.me/919700181520" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+            <p class="response-time">Usually responds within 24–48 hours.</p>
         </section>
     </main>
-    <footer>
-        <div class="footer">
-            <caption>Happy Coding :)</caption>
-        </div>
+
+    <footer class="footer">
+        <p>Happy Coding :)</p>
     </footer>
 </body>
 </html>
