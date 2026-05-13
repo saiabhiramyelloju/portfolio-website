@@ -2,6 +2,7 @@
 
 body{
     font-family: "Fira code", monospace;
+    background-color: #191919;
 }
 
 .navbar{
@@ -11,16 +12,19 @@ body{
     padding: 15px 40px;
     font-size: larger;
     background-color: transparent;
+    border-top: 1px solid black;
     border-bottom: 1px solid black;
     border-right: 2px solid black;
     border-left: 2px solid black;
     margin: none;
     height: 50px;
+    width: 93.651%;
 }
 
 nav ul{
     display: flex;
     list-style: none;
+    width: 100%;
     gap: 50px;
     padding: 0;
     margin: none;
@@ -49,15 +53,19 @@ nav ul{
 
 #home{
     background-image: url(images/image.png);
+    background-size: 100%;
+    background-position: fixed;
     height: 100vh;
-    width: auto;
+    width: 90%;
     margin: none;
     border-left: 2px solid black;
     border-right: 2px solid black;
     padding: 20px;
     background-repeat: no-repeat;
     background-position: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    padding: 5%;
+    color: rgb(224, 233, 117);
 }
