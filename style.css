@@ -33,11 +33,16 @@ body {
     min-height: 100vh;
 }
 
+a {
+    color: #7dd3fc;
+}
+
 .site-header {
     position: sticky;
     top: 0;
     z-index: 20;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     background: rgba(2, 6, 23, 0.7);
     border-bottom: 1px solid var(--border);
 }
@@ -49,31 +54,41 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 1rem;
 }
 
 .logo {
     font-size: 1.05rem;
     letter-spacing: 0.04em;
+    font-weight: 700;
+    color: var(--text);
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 1.15rem;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
 }
 
 .nav-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     color: var(--text);
     text-decoration: none;
     font-weight: 500;
-    padding: 0.4rem 0.75rem;
+    padding: 0.45rem 0.8rem;
     border-radius: 999px;
-    transition: 0.25s ease;
+    border: 1px solid transparent;
+    transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease, transform 180ms ease;
 }
 
 .nav-links a:hover {
-    color: #022c43;
+    color: #082f49;
     background: var(--primary);
+    transform: translateY(-1px);
 }
 
 .container {
@@ -89,6 +104,8 @@ body {
     border-radius: 18px;
     padding: 2rem;
     box-shadow: var(--shadow);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
 .hero {
@@ -138,7 +155,7 @@ p + p {
     border: 1px solid transparent;
     padding: 0.7rem 1.1rem;
     border-radius: 10px;
-    transition: 0.2s ease;
+    transition: background-color 180ms ease, transform 180ms ease, border-color 180ms ease, color 180ms ease;
 }
 
 .button:hover {
@@ -166,10 +183,6 @@ p + p {
     margin-top: 0.45rem;
 }
 
-a {
-    color: #7dd3fc;
-}
-
 .response-time {
     margin-top: 0.95rem;
     color: var(--muted);
@@ -186,11 +199,10 @@ a {
     .navbar {
         flex-direction: column;
         gap: 0.6rem;
+        padding: 0.9rem 1rem;
     }
 
     .nav-links {
-        gap: 0.5rem;
-        flex-wrap: wrap;
         justify-content: center;
     }
 
