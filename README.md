@@ -30,5 +30,5 @@ portfolio-website/
 ## Contact
 
 - GitHub: https://github.com/saiabhiramyelloju
-- Email: jarvisabhi91@gmail.com
+- Email: dev@abhiramportfolio.dpdns.org
 - LinkedIn: https://linkedin.com/in/sai-abhiram-yelloju
