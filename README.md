@@ -14,18 +14,22 @@ A simple personal portfolio website built with HTML and CSS. It presents a home 
 
 ```text
 portfolio-website/
-├── images/
-│   └── image.png
-├── index.html
-├── style.css
+├── public/
+│   ├── images/
+│   │   └── image.png
+│   ├── 404.html
+│   ├── index.html
+│   └── style.css
 └── README.md
 ```
 
 ## Customization
 
-- Update the text in `index.html` to change the personal details.
-- Replace `images/image.png` with your own background image.
-- Edit `style.css` to adjust colors, spacing, fonts, and layout.
+- Update the text in `public/index.html` to change the personal details.
+- Replace `public/images/image.png` with your own background image.
+- Edit `public/style.css` to adjust colors, spacing, fonts, and layout. Shared design tokens
+  (`--blur`, `--hover-lift`, `--transition-interactive`) and the reusable `.glass` class live at
+  the top of the file and are shared by both pages.
 
 ## Contact
 
