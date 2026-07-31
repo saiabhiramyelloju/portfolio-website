@@ -1,0 +1,26 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "A simple personal portfolio website built with HTML and CSS. It presents a home section, an about section, and a contact section for Sai Abhiram.",
+  "private": true,
+  "scripts": {
+    "lint:html": "html-validate \"public/**/*.html\"",
+    "lint:css": "stylelint \"public/**/*.css\"",
+    "lint:links": "linkinator public --config linkinator.config.json",
+    "lint:a11y": "start-server-and-test serve http://127.0.0.1:8080 \"pa11y-ci\"",
+    "serve": "http-server public -p 8080 -s",
+    "test": "npm run lint:html && npm run lint:css && npm run lint:links && npm run lint:a11y"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "html-validate": "^9.7.1",
+    "http-server": "^14.1.1",
+    "linkinator": "^6.1.4",
+    "pa11y-ci": "^4.0.1",
+    "start-server-and-test": "^2.0.13",
+    "stylelint": "^16.24.0",
+    "stylelint-config-standard": "^39.0.1"
+  }
+}

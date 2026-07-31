@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Validate HTML
+        run: npm run lint:html
+      - name: Lint CSS
+        run: npm run lint:css
+      - name: Check links
+        run: npm run lint:links
+      - name: Accessibility checks
+        run: npm run lint:a11y

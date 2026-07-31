@@ -21,6 +21,19 @@ portfolio-website/
 └── README.md
 ```
 
+## Quality Checks
+
+There is no build step, but static quality checks run in CI (and locally) via npm:
+
+```bash
+npm ci
+npm test            # runs all checks below
+npm run lint:html   # html-validate
+npm run lint:css    # stylelint
+npm run lint:links  # linkinator (broken links/images)
+npm run lint:a11y   # pa11y-ci (WCAG 2 AA) against a local server
+```
+
 ## Customization
 
 - Update the text in `index.html` to change the personal details.

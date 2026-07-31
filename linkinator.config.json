@@ -1,0 +1,7 @@
+{
+  "path": "public",
+  "recurse": true,
+  "timeout": 20000,
+  "retry": true,
+  "skip": ["^mailto:", "^https://wa\\.me/"]
+}
