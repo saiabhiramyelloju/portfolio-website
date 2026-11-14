@@ -1,6 +1,6 @@
 # Portfolio Website
 
-A simple personal portfolio website built with HTML and CSS. It presents a home section, an about section, and a contact section for Sai Abhiram.
+A simple personal portfolio built with HTML, CSS, and an image. There is no JavaScript, build step, or deployment configuration.
 
 ## Features
 
